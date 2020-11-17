@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify, render_template
 from dictionary_en import *
 import os
-import waitress
 
 
 app = Flask(__name__)
@@ -114,6 +113,5 @@ def translation():
 
 
 if __name__ == "__main__":
-    app.debug = False
-    port = int(os.environ.get('PORT', 33507))
-    waitress.serve(app, port=port)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
