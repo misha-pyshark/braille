@@ -16,7 +16,7 @@ def translation():
     '''
     For rendering results on HTML GUI
     '''
-    text_input = [str(x) for x in request.form.values()][0]
+    text_input = request.form['main_text']
 
     #Split the sentence by ' ' into a list or words
     def splitter(string):
