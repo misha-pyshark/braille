@@ -1,11 +1,22 @@
 from flask import Flask, request, jsonify, render_template
+from flask_sqlalchemy import SQLAlchemy
 from dictionary_en import *
-import os
+
 
 
 app = Flask(__name__)
 
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://arjhncjjjotxbc:3b583653ee3754dba776fc3a488267c8269b6b8186eb5981056aa970cc707c8f@ec2-23-23-36-227.compute-1.amazonaws.com:5432/d6fks0t2bevn18'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
+db = SQLAlchemy(app)
+class Entries(db.Model):
+    __tablename__ = 'all_entries'
+    id = db.Column(db.Integer, primary_key=True)
+    text = db.Column(db.String(500))
+
+    def __init__(self, text):
+        self.text=text
 
 @app.route('/')
 def home():
@@ -108,6 +119,9 @@ def translation():
 
     try:
         output = final(text_input)
+        data = Entries(text_input)
+        db.session.add(data)
+        db.session.commit()
     except:
         raise ValueError
 
@@ -115,4 +129,4 @@ def translation():
 
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run()
