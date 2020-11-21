@@ -39,6 +39,15 @@ def translation():
 
     return render_template('index.html', prediction_text=output, translator_text=text_input)
 
+@app.route('/api/', methods=['GET'])
+def api_id():
+    if 'words' in request.args:
+        words=str(request.args['words'])
+        return jsonify({'original':words,
+                    'braille': final(words)})
+    else:
+        return 'Error'
+
 
 #Split the sentence by ' ' into a list or words
 def splitter(string):
