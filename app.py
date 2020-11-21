@@ -6,6 +6,7 @@ from dictionary_en import *
 
 app = Flask(__name__)
 
+app.config['JSON_AS_ASCII'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://arjhncjjjotxbc:3b583653ee3754dba776fc3a488267c8269b6b8186eb5981056aa970cc707c8f@ec2-23-23-36-227.compute-1.amazonaws.com:5432/d6fks0t2bevn18'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
