@@ -27,11 +27,11 @@ To use the online version of the translator, simply go to http://www.fastbraille
 
 For programmers, the API should be use in the following format: http://fastbraille.com/api/?words=yourwordshere.<br>
 Here is a sample Python code:
-'''python
+```python
 import requests
 
 mytext='I want to translate this text'
 
 r = requests.get(f'http://fastbraille.com/api/?words={mytext}')
 print(r.json())
-'''
+```
