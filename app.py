@@ -1,10 +1,12 @@
 from flask import Flask, request, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
+from flask_restful import Api, Resource
 from dictionary_en import *
 
 
 
 app = Flask(__name__)
+api = Api(app)
 
 app.config['JSON_AS_ASCII'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://arjhncjjjotxbc:3b583653ee3754dba776fc3a488267c8269b6b8186eb5981056aa970cc707c8f@ec2-23-23-36-227.compute-1.amazonaws.com:5432/d6fks0t2bevn18'
@@ -40,14 +42,13 @@ def translation():
 
     return render_template('index.html', prediction_text=output, translator_text=text_input)
 
-@app.route('/api/', methods=['GET'])
-def api_id():
-    if 'words' in request.args:
-        words=str(request.args['words'])
-        return jsonify({'original':words,
-                    'braille': final(words)})
-    else:
-        return 'Error'
+
+class TranslatorAPI(Resource):
+    def get(self, text):
+        return jsonify({'original': text, 'braille': final(text)})
+
+api.add_resource(TranslatorAPI, '/api/<string:text>')
+
 
 
 #Split the sentence by ' ' into a list or words
