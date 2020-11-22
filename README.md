@@ -27,7 +27,7 @@ Braille: ⠠⠍⠽ ⠛⠕⠁⠇ ⠊⠎ ⠞⠕ ⠉⠗⠑⠁⠞⠑ ⠁ ⠋⠗⠑�
 # Usage
 To use the online version of the translator, simply go to http://www.fastbraille.com/ and use it like any other translator.
 
-For programmers, the API should be use in the following format: http://fastbraille.com/api/?words=yourwordshere.<br>
+For programmers, the API should be use in the following format: http://fastbraille.com/api/yourwordshere.<br>
 Here is a sample Python code:
 ```python
 import requests
