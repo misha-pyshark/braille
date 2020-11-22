@@ -43,10 +43,10 @@ You should get a dictionary with two key-value pairs, first entry is the braille
 
 ### Technology
 I used:
-* Python
-* CSS
-* HTML
-* Flask
-* PostgreSQL
-* Heroku
-* Git Hub
+* Python (algorithm + app)
+* CSS (style.css)
+* HTML (index.html)
+* Flask (app framework)
+* PostgreSQL (tracking entries and usage)
+* Heroku (deployment)
+* Git Hub (code version control)
