@@ -1,5 +1,5 @@
 # braille
-![GitHub Logo](/static/default.png)
+![GitHub Logo](/static/default.png =250x250)
 # What?
 My intention is to create a very simple and easily accessible [free online English to Braille translator](http://www.fastbraille.com/). There are similar products existing on the internet, yet some are paid or have signifant amounts of third party content or ads that make not the best user experience.<br>
 
