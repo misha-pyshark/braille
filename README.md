@@ -1,4 +1,4 @@
-# braille
+# English to Braille Translator
 <img src="https://github.com/misha-pyshark/braille/blob/main/static/default.png" alt="FastBraille" align="center" width="250"/>
 
 
