@@ -1,7 +1,10 @@
 # braille
 
 ### What?
-My intention is to create a very simple and easily accessible [free online English to Braille translator](http://www.fastbraille.com/). There are similar products existing on the internet, yet some are paid or have signifant amounts of third party content or ads that make not the best user experience. The project includes both: a web app (available at: http://www.fastbraille.com/) as well as a RESTful API that can be used by developers to work on similar technology advancement in the field.
+My intention is to create a very simple and easily accessible [free online English to Braille translator](http://www.fastbraille.com/). There are similar products existing on the internet, yet some are paid or have signifant amounts of third party content or ads that make not the best user experience.
+The project includes the following:
+*a web app (available at: http://www.fastbraille.com/)
+*a RESTful API that can be used by developers to work on similar technology advancement in the field.
 
 ### Why?
 Globally there are 285 million visually impaired people, of whom 39 million are blind. The majority of the 39 million are older people (aged 50+).
