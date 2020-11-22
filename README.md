@@ -40,3 +40,13 @@ Expected output:
 {'braille': '⠠⠊ ⠺⠁⠝⠞ ⠞⠕ ⠞⠗⠁⠝⠎⠇⠁⠞⠑ ⠞⠓⠊⠎ ⠞⠑⠭⠞', 'original': 'I want to translate this text'}
 ```
 You should get a dictionary with two key-value pairs, first entry is the braille translation and second entry is the original text.
+
+### Technology
+I used:
+* Python
+* CSS
+* HTML
+* Flask
+* PostgreSQL
+* Heroku
+* Git Hub
