@@ -49,7 +49,7 @@ I used:
 * Python (algorithm + app)
 * CSS (style.css)
 * HTML (index.html)
-* Flask (app framework)
+* Flask (app framework + RESTful API)
 * PostgreSQL (tracking entries and usage)
 * Heroku (deployment)
 * Git Hub (code version control)
