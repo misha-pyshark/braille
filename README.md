@@ -1,5 +1,5 @@
 # braille
-<img src="https://github.com/misha-pyshark/braille/blob/main/static/default.png" alt="FastBraille" align="center" width="250"/>
+<img src="https://github.com/misha-pyshark/braille/blob/main/static/default.png" alt="FastBraille" class="center" width="250"/>
 
 
 # What?
