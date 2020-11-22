@@ -34,11 +34,11 @@ import requests
 
 mytext='I want to translate this text'
 
-r = requests.get(f'http://fastbraille.com/api/?words={mytext}')
+r = requests.get(f'http://fastbraille.com/api/{mytext}')
 print(r.json())
 ```
 Expected output:
-```
+```shell
 {'braille': '⠠⠊ ⠺⠁⠝⠞ ⠞⠕ ⠞⠗⠁⠝⠎⠇⠁⠞⠑ ⠞⠓⠊⠎ ⠞⠑⠭⠞', 'original': 'I want to translate this text'}
 ```
 You should get a dictionary with two key-value pairs, first entry is the braille translation and second entry is the original text.
