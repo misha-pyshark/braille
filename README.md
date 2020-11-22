@@ -16,5 +16,5 @@ There are several tools that help visually impaired people in their daily life, 
 Braille literate adults have a higher rate of employment compared to those who don't have proficiency in braille. The purpose of this app is to enhance the accessibility to braille for visually impaired society and their friends and families to allow for better communication and skill development.
 
 ### Sample
-English: My goal is to create a free online English to Braille translator
+English: My goal is to create a free online English to Braille translator <br>
 Braille: ⠠⠍⠽ ⠛⠕⠁⠇ ⠊⠎ ⠞⠕ ⠉⠗⠑⠁⠞⠑ ⠁ ⠋⠗⠑⠑ ⠕⠝⠇⠊⠝⠑ ⠠⠑⠝⠛⠇⠊⠎⠓ ⠞⠕ ⠠⠃⠗⠁⠊⠇⠇⠑ ⠞⠗⠁⠝⠎⠇⠁⠞⠕⠗
