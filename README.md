@@ -54,3 +54,5 @@ I used:
 
 
 # Additional Information
+The translations provided by this app aren't perfect as I don't know all of the rules for Braille translation. This app provides Grade 1 Braille translation.<br>
+In the future, the functionality will be extended to more languages for translation.
