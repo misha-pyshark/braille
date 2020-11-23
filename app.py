@@ -7,6 +7,7 @@ from dictionary_en import *
 
 app = Flask(__name__)
 api = Api(app)
+talisman = Talisman(app)
 
 app.config['JSON_AS_ASCII'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://arjhncjjjotxbc:3b583653ee3754dba776fc3a488267c8269b6b8186eb5981056aa970cc707c8f@ec2-23-23-36-227.compute-1.amazonaws.com:5432/d6fks0t2bevn18'
@@ -22,10 +23,12 @@ class Entries(db.Model):
         self.text=text
 
 @app.route('/')
+@talisman(frame_options=ALLOW_FROM, frame_options_allow_from='*')
 def home():
     return render_template('index.html')
 
 @app.route('/',methods=['POST'])
+@talisman(frame_options=ALLOW_FROM, frame_options_allow_from='*')
 def translation():
     '''
     For rendering results on HTML GUI
