@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
 from flask_restful import Api, Resource
+from flask_talisman import Talisman, ALLOW_FROM
 from dictionary_en import *
 
 
