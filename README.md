@@ -3,10 +3,10 @@
 
 
 # What?
-My intention is to create a very simple and easily accessible [free online English to Braille translator](http://www.fastbraille.com/). There are similar products existing on the internet, yet some are paid or have signifant amounts of third party content or ads that make not the best user experience.<br>
+My intention is to create a very simple and easily accessible [free online English to Braille translator](https://www.fastbraille.com/). There are similar products existing on the internet, yet some are paid or have signifant amounts of third party content or ads that make not the best user experience.<br>
 
 The project includes the following:
-* a web app (available at: http://www.fastbraille.com/)
+* a web app (available at: https://www.fastbraille.com/)
 * a RESTful API that can be used by developers to work on similar technology advancement in the field.
 
 
