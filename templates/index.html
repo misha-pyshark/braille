@@ -37,24 +37,22 @@
 </head>
 
 <body>
- <div class="login">
+ <div class="braille">
 	<h1>Braille Translator</h1>
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('translation')}}"method="post">
-    	<input type="text" name="main_text" placeholder="Enter text here" required="required" value="{{translator_text}}"/>
+    	<input type="text" name="main_text" placeholder="Enter text here" required="required" value="{{translator_text}}" autofocus/>
 
       <button type="submit" class="btn btn-primary btn-block btn-large">Translate</button>
     </form>
 
-   <br>
-   <br>
-   <!-- {% if prediction_text %}
-   <h2>{{ prediction_text }}</h2>
-    {% endif %} -->
-    <h2 style="{{'display: none;' if not prediction_text }}">{{prediction_text}}</h2>
-
-
+   {% if prediction_text %}
+    <div class="braille-output">
+      <p>{{prediction_text}}</p>
+      <button class="btn printer" title="Print this braille" onclick="window.print()">🖨️</button>
+    </div>
+    {% endif %}
  </div>
 
  <footer>
