@@ -8,7 +8,8 @@ from dictionary_en import *
 
 app = Flask(__name__)
 api = Api(app)
-talisman = Talisman(app)
+
+talisman = Talisman(app, force_https=app.env != 'development', content_security_policy=False)
 
 app.config['JSON_AS_ASCII'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://arjhncjjjotxbc:3b583653ee3754dba776fc3a488267c8269b6b8186eb5981056aa970cc707c8f@ec2-23-23-36-227.compute-1.amazonaws.com:5432/d6fks0t2bevn18'
