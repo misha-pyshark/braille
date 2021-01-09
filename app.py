@@ -8,7 +8,6 @@ from dictionary_en import *
 
 app = Flask(__name__)
 api = Api(app)
-
 talisman = Talisman(app, force_https=app.env != 'development', content_security_policy=False)
 
 app.config['JSON_AS_ASCII'] = False
